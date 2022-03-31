@@ -1,0 +1,6 @@
+cat listofiles |for elemen in $1
+do
+  echo "seraching" $elemen
+  #grep -i foo $elemen
+done
+

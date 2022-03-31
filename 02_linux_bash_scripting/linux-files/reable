@@ -1,0 +1,10 @@
+/home/jkim/code/iea-cohort-07/02_linux_bash_scripting/linux-files/listofiles:20:foo.sorted
+/home/jkim/code/iea-cohort-07/02_linux_bash_scripting/linux-files/listofiles:21:foo.txt
+/home/jkim/code/iea-cohort-07/02_linux_bash_scripting/linux-files/moreoutput:269:              function  using  ``-f  foo=bar'',  an  attempt  is made to assign a value to a readonly variable, an attempt is made to
+/home/jkim/code/iea-cohort-07/02_linux_bash_scripting/linux-files/checkfiles:4:  #grep -i foo $elemen
+/home/jkim/code/iea-cohort-07/02_linux_bash_scripting/linux-files/temp3665:10:foo
+/home/jkim/code/iea-cohort-07/02_linux_bash_scripting/linux-files/temp3665:11:foo.sorted
+/home/jkim/code/iea-cohort-07/02_linux_bash_scripting/linux-files/temp3665:12:foo.txt
+/home/jkim/code/iea-cohort-07/02_linux_bash_scripting/linux-files/words:71832:foo
+/home/jkim/code/iea-cohort-07/02_linux_bash_scripting/linux-files/file:4:amend1		foo.sorted	lc3		poem-diff
+/home/jkim/code/iea-cohort-07/02_linux_bash_scripting/linux-files/file:5:amend1.1	foo.txt		nu		somedir
