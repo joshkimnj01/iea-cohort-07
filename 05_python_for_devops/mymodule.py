@@ -11,4 +11,7 @@ def foo():
 public_data = "public stuff!"
 # names that begin with _ are considered "private"
 _private_data = "private stuff!"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 584a75b437188de8bab001c0b2aa7a529a044c24
