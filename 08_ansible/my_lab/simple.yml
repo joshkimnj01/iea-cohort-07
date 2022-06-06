@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+    - name: Ping host
+      ping:
+  tasks:
+    - name: Send host name
+      debug:
+         msg: System {{ inventory_hostname }} has ip of {{ ansible_all_ipv4_addresses }} on gateway {{ ansible_default_ipv4.gateway }}

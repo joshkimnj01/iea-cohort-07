@@ -1,0 +1,623 @@
+localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.101.97",
+            "172.17.0.1",
+            "172.16.1.191"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::839:6dff:fe3e:26df",
+            "fe80::8e3:f9ff:febb:22b1"
+        ],
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "10/16/2017",
+        "ansible_bios_vendor": "Amazon EC2",
+        "ansible_bios_version": "1.0",
+        "ansible_board_asset_tag": "i-0dd646b61b50316d3",
+        "ansible_board_name": "NA",
+        "ansible_board_serial": "NA",
+        "ansible_board_vendor": "Amazon EC2",
+        "ansible_board_version": "NA",
+        "ansible_chassis_asset_tag": "Amazon EC2",
+        "ansible_chassis_serial": "NA",
+        "ansible_chassis_vendor": "Amazon EC2",
+        "ansible_chassis_version": "NA",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.14.276-211.499.amzn2.x86_64",
+            "LANG": "en_US.UTF-8",
+            "biosdevname": "0",
+            "console": "ttyS0,115200n8",
+            "net.ifnames": "0",
+            "no_console_suspend": "1",
+            "nvme_core.io_timeout": "4294967295",
+            "resume": "/dev/nvme0n1p1",
+            "resume_offset": "585949",
+            "ro": true,
+            "root": "UUID=347f0929-b8bb-46cb-b332-93329e60101a"
+        },
+        "ansible_date_time": {
+            "date": "2022-05-25",
+            "day": "25",
+            "epoch": "1653490097",
+            "hour": "10",
+            "iso8601": "2022-05-25T14:48:17Z",
+            "iso8601_basic": "20220525T104817380633",
+            "iso8601_basic_short": "20220525T104817",
+            "iso8601_micro": "2022-05-25T14:48:17.380633Z",
+            "minute": "48",
+            "month": "05",
+            "second": "17",
+            "time": "10:48:17",
+            "tz": "EDT",
+            "tz_dst": "EDT",
+            "tz_offset": "-0400",
+            "weekday": "Wednesday",
+            "weekday_number": "3",
+            "weeknumber": "21",
+            "year": "2022"
+        },
+        "ansible_default_ipv4": {
+            "address": "172.16.1.191",
+            "alias": "eth1",
+            "broadcast": "172.16.1.255",
+            "gateway": "172.16.1.1",
+            "interface": "eth1",
+            "macaddress": "0a:e3:f9:bb:22:b1",
+            "mtu": 9001,
+            "netmask": "255.255.255.0",
+            "network": "172.16.1.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {
+                "nvme0n1": [
+                    "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c",
+                    "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c-ns-1",
+                    "nvme-nvme.1d0f-766f6c3066323130313939613265616131393463-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                ],
+                "nvme0n1p1": [
+                    "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c-ns-1-part1",
+                    "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c-part1",
+                    "nvme-nvme.1d0f-766f6c3066323130313939613265616131393463-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                ],
+                "nvme0n1p128": [
+                    "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c-ns-1-part128",
+                    "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c-part128",
+                    "nvme-nvme.1d0f-766f6c3066323130313939613265616131393463-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part128"
+                ],
+                "nvme1n1": [
+                    "nvme-Amazon_Elastic_Block_Store_vol000d47b6baa67d7dd",
+                    "nvme-Amazon_Elastic_Block_Store_vol000d47b6baa67d7dd-ns-1",
+                    "nvme-nvme.1d0f-766f6c3030306434376236626161363764376464-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                ],
+                "nvme1n1p1": [
+                    "nvme-Amazon_Elastic_Block_Store_vol000d47b6baa67d7dd-ns-1-part1",
+                    "nvme-Amazon_Elastic_Block_Store_vol000d47b6baa67d7dd-part1",
+                    "nvme-nvme.1d0f-766f6c3030306434376236626161363764376464-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                ]
+            },
+            "labels": {
+                "nvme0n1p1": [
+                    "\\x2f"
+                ],
+                "nvme1n1p1": [
+                    "User"
+                ]
+            },
+            "masters": {},
+            "uuids": {
+                "nvme0n1p1": [
+                    "347f0929-b8bb-46cb-b332-93329e60101a"
+                ],
+                "nvme1n1p1": [
+                    "6268aed1-a431-4cd4-87c3-60ba28dd61f5"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "nvme0n1": {
+                "holders": [],
+                "host": "Non-Volatile memory controller: Amazon.com, Inc. Device 8061",
+                "links": {
+                    "ids": [
+                        "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c",
+                        "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c-ns-1",
+                        "nvme-nvme.1d0f-766f6c3066323130313939613265616131393463-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "Amazon Elastic Block Store",
+                "partitions": {
+                    "nvme0n1p1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c-ns-1-part1",
+                                "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c-part1",
+                                "nvme-nvme.1d0f-766f6c3066323130313939613265616131393463-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                            ],
+                            "labels": [
+                                "\\x2f"
+                            ],
+                            "masters": [],
+                            "uuids": [
+                                "347f0929-b8bb-46cb-b332-93329e60101a"
+                            ]
+                        },
+                        "sectors": "167768031",
+                        "sectorsize": 512,
+                        "size": "80.00 GB",
+                        "start": "4096",
+                        "uuid": "347f0929-b8bb-46cb-b332-93329e60101a"
+                    },
+                    "nvme0n1p128": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c-ns-1-part128",
+                                "nvme-Amazon_Elastic_Block_Store_vol0f210199a2eaa194c-part128",
+                                "nvme-nvme.1d0f-766f6c3066323130313939613265616131393463-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part128"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "2048",
+                        "sectorsize": 512,
+                        "size": "1.00 MB",
+                        "start": "2048",
+                        "uuid": null
+                    }
+                },
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "none",
+                "sectors": "167772160",
+                "sectorsize": "512",
+                "serial": "vol0f210199a2eaa194c",
+                "size": "80.00 GB",
+                "support_discard": "0",
+                "vendor": null,
+                "virtual": 1
+            },
+            "nvme1n1": {
+                "holders": [],
+                "host": "Non-Volatile memory controller: Amazon.com, Inc. Device 8061",
+                "links": {
+                    "ids": [
+                        "nvme-Amazon_Elastic_Block_Store_vol000d47b6baa67d7dd",
+                        "nvme-Amazon_Elastic_Block_Store_vol000d47b6baa67d7dd-ns-1",
+                        "nvme-nvme.1d0f-766f6c3030306434376236626161363764376464-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "Amazon Elastic Block Store",
+                "partitions": {
+                    "nvme1n1p1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "nvme-Amazon_Elastic_Block_Store_vol000d47b6baa67d7dd-ns-1-part1",
+                                "nvme-Amazon_Elastic_Block_Store_vol000d47b6baa67d7dd-part1",
+                                "nvme-nvme.1d0f-766f6c3030306434376236626161363764376464-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                            ],
+                            "labels": [
+                                "User"
+                            ],
+                            "masters": [],
+                            "uuids": [
+                                "6268aed1-a431-4cd4-87c3-60ba28dd61f5"
+                            ]
+                        },
+                        "sectors": "104855552",
+                        "sectorsize": 512,
+                        "size": "50.00 GB",
+                        "start": "2048",
+                        "uuid": "6268aed1-a431-4cd4-87c3-60ba28dd61f5"
+                    }
+                },
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "none",
+                "sectors": "104857600",
+                "sectorsize": "512",
+                "serial": "vol000d47b6baa67d7dd",
+                "size": "50.00 GB",
+                "support_discard": "0",
+                "vendor": null,
+                "virtual": 1
+            },
+            "zram0": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "",
+                "sectors": "24188224",
+                "sectorsize": "4096",
+                "size": "11.53 GB",
+                "support_discard": "4096",
+                "vendor": null,
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "Amazon",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/os-release",
+        "ansible_distribution_file_variety": "Amazon",
+        "ansible_distribution_major_version": "2",
+        "ansible_distribution_minor_version": "NA",
+        "ansible_distribution_release": "Karoo",
+        "ansible_distribution_version": "2",
+        "ansible_dns": {
+            "nameservers": [
+                "172.16.1.95",
+                "172.16.0.125",
+                "192.168.0.2"
+            ],
+            "options": {
+                "attempts": "5",
+                "timeout": "2"
+            },
+            "search": [
+                "ec2.internal"
+            ]
+        },
+        "ansible_docker0": {
+            "active": false,
+            "device": "docker0",
+            "id": "8000.0242368d5e83",
+            "interfaces": [],
+            "ipv4": {
+                "address": "172.17.0.1",
+                "broadcast": "172.17.255.255",
+                "netmask": "255.255.0.0",
+                "network": "172.17.0.0"
+            },
+            "macaddress": "02:42:36:8d:5e:83",
+            "mtu": 1500,
+            "promisc": false,
+            "stp": false,
+            "type": "bridge"
+        },
+        "ansible_domain": "corp.amazonworkspaces.com",
+        "ansible_effective_group_id": 66049,
+        "ansible_effective_user_id": 71143,
+        "ansible_env": {
+            "COLORTERM": "truecolor",
+            "DBUS_SESSION_BUS_ADDRESS": "unix:abstract=/tmp/dbus-YRDBQD8xs5,guid=5143fbdab910ecb798ba074a62863c10",
+            "DESKTOP_SESSION": "mate",
+            "DISPLAY": ":100",
+            "GTK_OVERLAY_SCROLLING": "0",
+            "HISTCONTROL": "ignoredups",
+            "HISTSIZE": "1000",
+            "HOME": "/home/jkim",
+            "HOSTNAME": "a-3d7bkcnleadw3",
+            "LANG": "en_US.UTF-8",
+            "LESSOPEN": "||/usr/bin/lesspipe.sh %s",
+            "LOGNAME": "CORP\\jkim",
+            "LS_COLORS": "rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:",
+            "MAIL": "/var/spool/mail/CORP\\jkim",
+            "MATE_DESKTOP_SESSION_ID": "this-is-deprecated",
+            "PATH": "/home/jkim/code/iea-cohort-07/08_ansible/my_lab/mylab/bin:/usr/local/bin:/usr/bin:/bin:/sbin:/usr/local/sbin:/usr/sbin:/usr/local/bin:/home/jkim/.local/bin:/home/jkim/bin:/usr/local/bin:/home/jkim/.local/bin:/home/jkim/bin",
+            "PWD": "/home/jkim/code/iea-cohort-07/08_ansible/my_lab",
+            "QT_AUTO_SCREEN_SCALE_FACTOR": "0",
+            "QT_SCALE_FACTOR": "1",
+            "SESSIONTYPE": "mate",
+            "SESSION_MANAGER": "local/unix:@/tmp/.ICE-unix/5653,unix/unix:/tmp/.ICE-unix/5653",
+            "SHELL": "/bin/bash",
+            "SHLVL": "4",
+            "SSH_AGENT_PID": "5742",
+            "SSH_AUTH_SOCK": "/run/user/71143/keyring/ssh",
+            "TERM": "xterm-256color",
+            "USER": "CORP\\jkim",
+            "VIRTUAL_ENV": "/home/jkim/code/iea-cohort-07/08_ansible/my_lab/mylab",
+            "VTE_VERSION": "5202",
+            "WINDOWID": "67130171",
+            "XAUTHORITY": "/home/jkim/.Xauthority",
+            "XDG_CURRENT_DESKTOP": "MATE",
+            "XDG_DATA_DIRS": "/home/jkim/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share",
+            "XDG_RUNTIME_DIR": "/run/user/71143",
+            "XDG_SEAT": "seat0",
+            "XDG_SESSION_ID": "1",
+            "XDG_VTNR": "7",
+            "_": "/home/jkim/code/iea-cohort-07/08_ansible/my_lab/mylab/bin/python3"
+        },
+        "ansible_eth0": {
+            "active": true,
+            "device": "eth0",
+            "ipv4": {
+                "address": "192.168.101.97",
+                "broadcast": "192.168.127.255",
+                "netmask": "255.255.192.0",
+                "network": "192.168.64.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::839:6dff:fe3e:26df",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "0a:39:6d:3e:26:df",
+            "module": "ena",
+            "mtu": 9001,
+            "pciid": "0000:00:05.0",
+            "promisc": false,
+            "type": "ether"
+        },
+        "ansible_eth1": {
+            "active": true,
+            "device": "eth1",
+            "ipv4": {
+                "address": "172.16.1.191",
+                "broadcast": "172.16.1.255",
+                "netmask": "255.255.255.0",
+                "network": "172.16.1.0"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::8e3:f9ff:febb:22b1",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "0a:e3:f9:bb:22:b1",
+            "module": "ena",
+            "mtu": 9001,
+            "pciid": "0000:00:06.0",
+            "promisc": false,
+            "type": "ether"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "a-3d7bkcnleadw3.corp.amazonworkspaces.com",
+        "ansible_hostname": "a-3d7bkcnleadw3",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "lo",
+            "eth0",
+            "eth1",
+            "docker0"
+        ],
+        "ansible_is_chroot": true,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.14.276-211.499.amzn2.x86_64",
+        "ansible_kernel_version": "#1 SMP Wed Apr 27 21:08:48 UTC 2022",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {
+            "codename": "Karoo",
+            "description": "Amazon Linux release 2 (Karoo)",
+            "id": "Amazon",
+            "major_release": "2",
+            "release": "2"
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "be1d75b91fbc4a9bb1721c95179d55da",
+        "ansible_memfree_mb": 131,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 221,
+                "used": 7652
+            },
+            "real": {
+                "free": 131,
+                "total": 7873,
+                "used": 7742
+            },
+            "swap": {
+                "cached": 86,
+                "free": 5389,
+                "total": 11810,
+                "used": 6421
+            }
+        },
+        "ansible_memtotal_mb": 7873,
+        "ansible_mounts": [
+            {
+                "block_available": 16983362,
+                "block_size": 4096,
+                "block_total": 20968443,
+                "block_used": 3985081,
+                "device": "/dev/nvme0n1p1",
+                "fstype": "xfs",
+                "inode_available": 41728038,
+                "inode_total": 41941952,
+                "inode_used": 213914,
+                "mount": "/",
+                "options": "rw,noatime,attr2,inode64,noquota",
+                "size_available": 69563850752,
+                "size_total": 85886742528,
+                "uuid": "347f0929-b8bb-46cb-b332-93329e60101a"
+            },
+            {
+                "block_available": 11515144,
+                "block_size": 4096,
+                "block_total": 12868472,
+                "block_used": 1353328,
+                "device": "/dev/nvme1n1p1",
+                "fstype": "ext4",
+                "inode_available": 2993845,
+                "inode_total": 3276800,
+                "inode_used": 282955,
+                "mount": "/volumes/user",
+                "options": "rw,relatime,discard,data=ordered",
+                "size_available": 47166029824,
+                "size_total": 52709261312,
+                "uuid": "6268aed1-a431-4cd4-87c3-60ba28dd61f5"
+            },
+            {
+                "block_available": 11515144,
+                "block_size": 4096,
+                "block_total": 12868472,
+                "block_used": 1353328,
+                "device": "/dev/nvme1n1p1",
+                "fstype": "ext4",
+                "inode_available": 2993845,
+                "inode_total": 3276800,
+                "inode_used": 282955,
+                "mount": "/home",
+                "options": "rw,relatime,discard,data=ordered,bind",
+                "size_available": 47166029824,
+                "size_total": 52709261312,
+                "uuid": "6268aed1-a431-4cd4-87c3-60ba28dd61f5"
+            },
+            {
+                "block_available": 0,
+                "block_size": 512,
+                "block_total": 0,
+                "block_used": 0,
+                "device": "/dev/fuse",
+                "fstype": "fuse",
+                "inode_available": 0,
+                "inode_total": 0,
+                "inode_used": 0,
+                "mount": "/run/user/71143/doc",
+                "options": "rw,nosuid,nodev,relatime,user_id=71143,group_id=66049",
+                "size_available": 0,
+                "size_total": 0,
+                "uuid": "N/A"
+            }
+        ],
+        "ansible_nodename": "a-3d7bkcnleadw3",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "yum",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.14.276-211.499.amzn2.x86_64",
+            "LANG": "en_US.UTF-8",
+            "biosdevname": "0",
+            "console": [
+                "tty0",
+                "ttyS0,115200n8"
+            ],
+            "net.ifnames": "0",
+            "no_console_suspend": "1",
+            "nvme_core.io_timeout": "4294967295",
+            "resume": "/dev/nvme0n1p1",
+            "resume_offset": "585949",
+            "ro": true,
+            "root": "UUID=347f0929-b8bb-46cb-b332-93329e60101a"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) Platinum 8175M CPU @ 2.50GHz",
+            "1",
+            "GenuineIntel",
+            "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 1,
+        "ansible_processor_nproc": 2,
+        "ansible_processor_threads_per_core": 2,
+        "ansible_processor_vcpus": 2,
+        "ansible_product_name": "t3.large",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "NA",
+        "ansible_product_version": "NA",
+        "ansible_python": {
+            "executable": "/home/jkim/code/iea-cohort-07/08_ansible/my_lab/mylab/bin/python3",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 10,
+                "minor": 7,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                7,
+                10,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.7.10",
+        "ansible_real_group_id": 66049,
+        "ansible_real_user_id": 71143,
+        "ansible_selinux": {
+            "status": "disabled"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIPyg48WHVPwo28Dec9s2fGHxrZxTTbTZugRfvQxdoNV9zt8NnwAorNK8eCJa9loatg88THZ6+LqGe39JwuCf64=",
+        "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIP4jK6UULkZ+kanHxCLGK6rgTtRADGBnRnFG+V9vCsP0",
+        "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDiUQUuf45eTsnnLCqxU8Eu4W/vNwPGqjlNkbHfYWdmsQo9zzPkVdwF5WPB9dSEfrNEroc6j/ktz+4gLJ75bk2jR28IL+2PX+xG/H4R4V1/+8hbzq2ZF/RioxLFN8IMBs5c7JdYaldWnSmfNnxT3EWFsO74y8EAnOC6tbUxAMiiBR03sI86pg7DDQQRoYlYh+ep9alGxrfNCHJfdccws0iBR6BYiiDVqPWX6LhWYhuiGgC5l9lNRmpAnI5YpMkLoTQvWz1pUa0CsWZji3Z1HOCbJYmmOPWUdVviIWVuo79V4O50ycSkteFenw5o6nQJb9ptPEWirW0aD2Bc+sbzHA69",
+        "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
+        "ansible_swapfree_mb": 5389,
+        "ansible_swaptotal_mb": 11810,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            ""
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "Amazon EC2",
+        "ansible_uptime_seconds": 525783,
+        "ansible_user_dir": "/home/jkim",
+        "ansible_user_gecos": "",
+        "ansible_user_gid": 66049,
+        "ansible_user_id": "CORP\\jkim",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 71143,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_tech_guest": [
+            "kvm"
+        ],
+        "ansible_virtualization_tech_host": [],
+        "ansible_virtualization_type": "kvm",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
